@@ -1,0 +1,7 @@
+# Reference / design files
+stitch_hinckley/
+stitch_hinckley_design_replica.zip
+
+# Client project files
+projects/
+images/*.pdf

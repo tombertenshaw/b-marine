@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B-Marine | Naval Architecture & Marine Engineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      color: #1a1c1c;
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-variant": "#e2e2e2",
+            "on-secondary": "#ffffff",
+            "on-primary": "#ffffff",
+            "surface-container-highest": "#e2e2e2",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f3f3f4",
+            "secondary-container": "#f6e1aa",
+            "secondary": "#6c5d32",
+            "background": "#f9f9f9",
+            "tertiary": "#181810",
+            "teak-accent": "#A39161",
+            "outline-variant": "#c4c6d0",
+            "surface": "#f9f9f9",
+            "on-background": "#1a1c1c",
+            "surface-dim": "#dadada",
+            "primary": "#001736",
+            "parchment-surface": "#EEEADD",
+            "primary-fixed": "#d6e3ff",
+            "inverse-surface": "#2f3131",
+            "pure-white": "#FFFFFF",
+            "outline": "#747780",
+            "hull-navy": "#002B5C",
+            "primary-container": "#002b5c",
+            "on-surface": "#1a1c1c",
+            "surface-tint": "#3f5f92",
+            "surface-container": "#eeeeee",
+            "surface-bright": "#f9f9f9",
+            "tertiary-container": "#2d2c24",
+            "surface-container-high": "#e8e8e8",
+            "on-surface-variant": "#43474f"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          spacing: {
+            "container-max-width": "1280px",
+            "gutter": "24px",
+            "section-gap-mobile": "64px",
+            "margin-desktop": "80px",
+            "section-gap-desktop": "120px",
+            "margin-mobile": "20px"
+          },
+          fontFamily: {
+            "body-lg":           ["Montserrat", "sans-serif"],
+            "headline-md":       ["EB Garamond", "serif"],
+            "body-md":           ["Montserrat", "sans-serif"],
+            "display-lg":        ["EB Garamond", "serif"],
+            "label-caps":        ["Montserrat", "sans-serif"],
+            "display-lg-mobile": ["EB Garamond", "serif"]
+          },
+          fontSize: {
+            "body-lg":           ["18px", { "lineHeight": "32px", "fontWeight": "400" }],
+            "headline-md":       ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+            "body-md":           ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "display-lg":        ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "label-caps":        ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+            "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 w-full z-50 bg-pure-white/80 backdrop-blur-md border-b border-teak-accent/10 transition-all duration-500 ease-in-out">
+    <div class="flex justify-between items-center px-margin-desktop py-6 w-full max-w-container-max-width mx-auto">
+      <div class="flex flex-col leading-tight">
+        <span class="font-headline-md text-xl text-hull-navy uppercase tracking-tighter">B-Marine</span>
+        <span class="font-label-caps text-[9px] text-teak-accent uppercase tracking-widest">Bertenshaw Marine Ltd</span>
+      </div>
+      <div class="hidden md:flex items-center space-x-12">
+        <a class="font-label-caps text-label-caps text-hull-navy hover:text-teak-accent transition-colors duration-300 uppercase" href="#about">About</a>
+        <a class="font-label-caps text-label-caps text-hull-navy hover:text-teak-accent transition-colors duration-300 uppercase" href="#services">Services</a>
+        <a class="font-label-caps text-label-caps text-hull-navy hover:text-teak-accent transition-colors duration-300 uppercase" href="#approach">Approach</a>
+        <a class="font-label-caps text-label-caps text-hull-navy hover:text-teak-accent transition-colors duration-300 uppercase" href="#contact">Contact</a>
+      </div>
+      <a href="#contact" class="hidden md:block bg-hull-navy text-pure-white px-8 py-3 font-label-caps text-label-caps uppercase tracking-widest hover:opacity-90 transition-opacity">
+        Enquire
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="relative h-screen w-full overflow-hidden flex items-center">
+    <div class="absolute inset-0 z-0">
+      <img class="hero-slide absolute inset-0 w-full h-full object-cover" style="opacity:1;transition:opacity 1.5s ease-in-out;" src="images/Taboo.png" alt="" />
+      <img class="hero-slide absolute inset-0 w-full h-full object-cover" style="opacity:0;transition:opacity 1.5s ease-in-out;" src="images/Selene Extension.png" alt="" />
+      <img class="hero-slide absolute inset-0 w-full h-full object-cover" style="opacity:0;transition:opacity 1.5s ease-in-out;" src="images/Selene 42.png" alt="" />
+      <img class="hero-slide absolute inset-0 w-full h-full object-cover" style="opacity:0;transition:opacity 1.5s ease-in-out;" src="images/3m Tender.png" alt="" />
+      <img class="hero-slide absolute inset-0 w-full h-full object-cover" style="opacity:0;transition:opacity 1.5s ease-in-out;" src="images/15m Yacht.png" alt="" />
+      <img class="hero-slide absolute inset-0 w-full h-full object-cover" style="opacity:0;transition:opacity 1.5s ease-in-out;" src="images/Taboo CFD.jpg" alt="" />
+      <div class="absolute inset-0 bg-gradient-to-r from-hull-navy/70 to-hull-navy/20"></div>
+    </div>
+    <div class="relative z-10 px-margin-desktop w-full max-w-container-max-width mx-auto">
+      <div class="max-w-2xl text-pure-white">
+        <p class="font-label-caps text-label-caps tracking-[0.3em] mb-6 uppercase opacity-80">Naval Architecture & Marine Engineering — New Zealand</p>
+        <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-8 leading-tight">Engineering vessels built to perform and last.</h1>
+        <p class="font-body-lg text-body-lg mb-10 opacity-90 max-w-lg">Independent naval architecture across custom new builds, vessel upgrades, and structural and stability engineering — for clients who need the work done right.</p>
+        <div class="flex flex-col sm:flex-row gap-6">
+          <a href="#contact" class="bg-pure-white text-hull-navy px-10 py-5 font-label-caps text-label-caps uppercase tracking-widest hover:bg-parchment-surface transition-colors text-center">
+            Get in Touch
+          </a>
+          <a href="#services" class="border border-pure-white/40 backdrop-blur-sm text-pure-white px-10 py-5 font-label-caps text-label-caps uppercase tracking-widest hover:bg-pure-white/10 transition-colors text-center">
+            Services
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 text-pure-white opacity-60">
+      <p class="font-label-caps text-[10px] tracking-widest uppercase">Scroll to Explore</p>
+      <div class="w-[1px] h-12 bg-pure-white/40"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-section-gap-desktop bg-parchment-surface relative overflow-hidden">
+    <div class="px-margin-desktop w-full max-w-container-max-width mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+      <div class="md:col-span-5 order-2 md:order-1">
+        <div class="inline-block px-4 py-1 bg-hull-navy/5 border border-hull-navy/10 mb-8">
+          <span class="font-label-caps text-[10px] text-hull-navy uppercase tracking-widest">Naval Architect — New Zealand</span>
+        </div>
+        <h2 class="font-display-lg text-headline-md md:text-display-lg text-hull-navy mb-8">Tom Bertenshaw</h2>
+        <div class="space-y-6 text-hull-navy/80 font-body-lg text-body-lg">
+          <p>B-Marine is the independent naval architecture practice of Tom Bertenshaw. With a foundation across multiple engineering disciplines, Tom brings rigorous technical analysis to every project — from hull form development through to final documentation.</p>
+          <p>Work spans custom vessel design for private clients and complex retrofit and upgrade projects on existing craft. Every project is approached with the same standard: understand the vessel's operating context, apply sound engineering, and deliver output that can be acted on.</p>
+          <p>No overhead, no junior hand-offs. You work directly with Tom from brief to delivery.</p>
+        </div>
+        <div class="mt-12 flex items-center gap-10">
+          <div class="text-center">
+            <div class="font-headline-md text-headline-md text-teak-accent">NZ</div>
+            <div class="font-label-caps text-[10px] uppercase text-hull-navy/50 mt-1">Based in New Zealand</div>
+          </div>
+          <div class="w-[1px] h-10 bg-hull-navy/10"></div>
+          <div class="text-center">
+            <div class="font-headline-md text-headline-md text-teak-accent">MNZ</div>
+            <div class="font-label-caps text-[10px] uppercase text-hull-navy/50 mt-1">Regulatory framework</div>
+          </div>
+          <div class="w-[1px] h-10 bg-hull-navy/10"></div>
+          <div class="text-center">
+            <div class="font-headline-md text-headline-md text-teak-accent">Rec & Com</div>
+            <div class="font-label-caps text-[10px] uppercase text-hull-navy/50 mt-1">Vessel experience</div>
+          </div>
+        </div>
+      </div>
+      <div class="md:col-span-7 order-1 md:order-2 relative">
+        <div class="aspect-[4/5] p-4 border border-teak-accent/10 relative z-10 bg-hull-navy/5">
+          <!-- Replace with a professional photo -->
+          <div class="w-full h-full bg-hull-navy/8 flex items-center justify-center">
+            <span class="font-label-caps text-[10px] text-hull-navy/30 uppercase tracking-widest">Photo</span>
+          </div>
+        </div>
+        <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-teak-accent/10 -z-0"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-section-gap-desktop bg-pure-white">
+    <div class="px-margin-desktop w-full max-w-container-max-width mx-auto">
+      <div class="mb-section-gap-mobile">
+        <p class="font-label-caps text-label-caps tracking-[0.4em] text-teak-accent mb-4 uppercase">Services</p>
+        <h2 class="font-display-lg text-headline-md md:text-display-lg text-hull-navy">What B-Marine delivers</h2>
+        <p class="font-body-lg text-body-lg text-hull-navy/60 mt-6 max-w-xl">Projects across the full spectrum of naval architecture and marine engineering — new builds, existing vessels, and technical engineering deliverables.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-surface-container-low p-10 border border-hull-navy/5 border-t-2 border-t-teak-accent flex flex-col gap-4">
+          <h3 class="font-headline-md text-headline-md text-hull-navy">Custom Vessel Design</h3>
+          <p class="font-body-md text-body-md text-hull-navy/70">New build design for recreational yachts and motor vessels. Hull form development, general arrangement, structural design, and construction documentation tailored to the build method and client's operating profile.</p>
+        </div>
+
+        <div class="bg-surface-container-low p-10 border border-hull-navy/5 border-t-2 border-t-teak-accent flex flex-col gap-4">
+          <h3 class="font-headline-md text-headline-md text-hull-navy">Commercial Vessel Design</h3>
+          <p class="font-body-md text-body-md text-hull-navy/70">Design and engineering for workboats, charter vessels, fishing craft, and other commercial applications. Compliance with Maritime New Zealand requirements and applicable classification rules where required.</p>
+        </div>
+
+        <div class="bg-surface-container-low p-10 border border-hull-navy/5 border-t-2 border-t-teak-accent flex flex-col gap-4">
+          <h3 class="font-headline-md text-headline-md text-hull-navy">Retrofits & Upgrades</h3>
+          <p class="font-body-md text-body-md text-hull-navy/70">Engineering assessment and design for modifications to existing vessels. Structural alterations, machinery changes, deck equipment, and system upgrades — with full consideration of the effect on the vessel as a whole.</p>
+        </div>
+
+        <div class="bg-surface-container-low p-10 border border-hull-navy/5 border-t-2 border-t-teak-accent flex flex-col gap-4">
+          <h3 class="font-headline-md text-headline-md text-hull-navy">Structural Engineering</h3>
+          <p class="font-body-md text-body-md text-hull-navy/70">Scantling design and structural analysis for hulls, decks, bulkheads, and major structural members. First-principles calculations and rule-based approaches, documented for survey or client use.</p>
+        </div>
+
+        <div class="bg-surface-container-low p-10 border border-hull-navy/5 border-t-2 border-t-teak-accent flex flex-col gap-4">
+          <h3 class="font-headline-md text-headline-md text-hull-navy">Stability Analysis</h3>
+          <p class="font-body-md text-body-md text-hull-navy/70">Intact and damage stability assessment for new and existing vessels. Inclining experiments, lightship surveys, loading conditions, and stability booklet preparation to applicable standards.</p>
+        </div>
+
+        <div class="flex flex-col justify-center items-start p-10 border border-teak-accent/20">
+          <p class="font-body-md text-body-md italic text-hull-navy/60 mb-8">"Engineering that holds up under scrutiny — on paper and on the water."</p>
+          <a href="#contact" class="font-label-caps text-label-caps text-hull-navy uppercase tracking-widest border-b border-teak-accent pb-1 hover:text-teak-accent transition-colors">
+            Discuss a project
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section id="approach" class="py-section-gap-desktop bg-hull-navy text-pure-white overflow-hidden">
+    <div class="px-margin-desktop w-full max-w-container-max-width mx-auto">
+      <p class="font-label-caps text-label-caps tracking-[0.4em] text-teak-accent mb-6 uppercase">How it works</p>
+      <h2 class="font-display-lg text-headline-md md:text-display-lg text-pure-white mb-16">Direct. Technical. Accountable.</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div>
+          <div class="w-8 h-[1px] bg-teak-accent mb-6"></div>
+          <h4 class="font-label-caps text-label-caps text-teak-accent uppercase tracking-widest mb-4">Independent</h4>
+          <p class="font-body-md text-body-md text-pure-white/60">No firm structure, no management layers. Tom works directly on every project and is accountable for every deliverable that leaves B-Marine.</p>
+        </div>
+        <div>
+          <div class="w-8 h-[1px] bg-teak-accent mb-6"></div>
+          <h4 class="font-label-caps text-label-caps text-teak-accent uppercase tracking-widest mb-4">Technically Grounded</h4>
+          <p class="font-body-md text-body-md text-pure-white/60">Work is backed by engineering analysis, not convention alone. If an approach doesn't hold up under scrutiny, it gets challenged and revised.</p>
+        </div>
+        <div>
+          <div class="w-8 h-[1px] bg-teak-accent mb-6"></div>
+          <h4 class="font-label-caps text-label-caps text-teak-accent uppercase tracking-widest mb-4">Practical Outputs</h4>
+          <p class="font-body-md text-body-md text-pure-white/60">Deliverables are structured so clients, builders, and surveyors can use them. Documentation that sits in a drawer helps no one.</p>
+        </div>
+        <div>
+          <div class="w-8 h-[1px] bg-teak-accent mb-6"></div>
+          <h4 class="font-label-caps text-label-caps text-teak-accent uppercase tracking-widest mb-4">Regulatory Aware</h4>
+          <p class="font-body-md text-body-md text-pure-white/60">Familiar with the MNZ framework and relevant classification society rules. Compliance requirements are built in, not bolted on at the end.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-section-gap-desktop bg-parchment-surface">
+    <div class="px-margin-desktop w-full max-w-container-max-width mx-auto">
+      <div class="max-w-2xl">
+        <p class="font-label-caps text-label-caps tracking-[0.4em] text-teak-accent mb-6 uppercase">Contact</p>
+        <h2 class="font-display-lg text-headline-md md:text-display-lg text-hull-navy mb-8">Start a conversation.</h2>
+        <p class="font-body-lg text-body-lg text-hull-navy/70 mb-12 max-w-lg">Whether you have a defined project or are still working through the brief, get in touch. Enquiries from individual clients, boat builders, and marine professionals are all welcome.</p>
+        <a href="mailto:tom@b-marine.co.nz" class="inline-block font-headline-md text-headline-md text-hull-navy border-b border-teak-accent pb-1 hover:text-teak-accent transition-colors">
+          tom@b-marine.co.nz
+        </a>
+        <p class="font-label-caps text-[10px] text-hull-navy/40 uppercase tracking-widest mt-8">Based in New Zealand — available for domestic and international projects</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-hull-navy w-full py-section-gap-desktop">
+    <div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop w-full max-w-container-max-width mx-auto gap-12">
+      <div class="flex flex-col items-center md:items-start">
+        <div class="font-headline-md text-headline-md text-pure-white uppercase mb-2 tracking-tight">B-Marine</div>
+        <p class="font-label-caps text-[10px] text-pure-white/40 uppercase tracking-widest">Bertenshaw Marine Ltd</p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-10">
+        <a class="font-label-caps text-label-caps text-pure-white/60 hover:text-pure-white transition-colors uppercase" href="#about">About</a>
+        <a class="font-label-caps text-label-caps text-pure-white/60 hover:text-pure-white transition-colors uppercase" href="#services">Services</a>
+        <a class="font-label-caps text-label-caps text-pure-white/60 hover:text-pure-white transition-colors uppercase" href="#approach">Approach</a>
+        <a class="font-label-caps text-label-caps text-pure-white/60 hover:text-pure-white transition-colors uppercase" href="#contact">Contact</a>
+      </div>
+      <a href="mailto:tom@b-marine.co.nz" class="font-label-caps text-[10px] text-pure-white/50 hover:text-teak-accent transition-colors uppercase tracking-widest">
+        tom@b-marine.co.nz
+      </a>
+    </div>
+    <div class="w-full mt-24 pt-8 border-t border-pure-white/5 text-center px-margin-desktop">
+      <p class="font-label-caps text-[10px] text-pure-white/20 tracking-widest uppercase">© 2026 Bertenshaw Marine Ltd trading as B-Marine. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const slides = document.querySelectorAll('.hero-slide');
+      let current = 0;
+      setInterval(function () {
+        slides[current].style.opacity = '0';
+        current = (current + 1) % slides.length;
+        slides[current].style.opacity = '1';
+      }, 4000);
+    })();
+  </script>
+
+</body>
+</html>
