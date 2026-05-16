@@ -370,12 +370,24 @@
     (function () {
       const viewer = document.getElementById('portfolio-viewer');
       const overlay = document.getElementById('model-loading');
-      if (viewer && overlay) {
-        viewer.addEventListener('load', function () {
+      if (!viewer) return;
+
+      viewer.addEventListener('load', function () {
+        if (overlay) {
           overlay.style.opacity = '0';
           setTimeout(function () { overlay.style.display = 'none'; }, 500);
+        }
+
+        // Override material properties to fix dark/reflective surfaces and opacity issues
+        const materials = viewer.model.materials;
+        materials.forEach(function (mat) {
+          const pbr = mat.pbrMetallicRoughness;
+          pbr.setMetallicFactor(0);    // remove reflectivity
+          pbr.setRoughnessFactor(0.8); // diffuse/matte surface
+          mat.setAlphaMode('OPAQUE'); // force full opacity — fixes disappearing faces
+          mat.setDoubleSided(true);   // render both sides — fixes missing faces at certain angles
         });
-      }
+      });
     })();
   </script>
 
